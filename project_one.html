@@ -39,16 +39,16 @@
 							<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
 								<i class="icon-align-justify icon-2x"></i>
 							</button>
-							<!--logo-->			
 							<div class="logo">
 								 <a href="index.html"><img src="img/logo.png" alt="" class="animated bounceInDown" /></a>  
 							</div>
-							<!--menu-->
 							<div class="nav-collapse collapse">
 								<ul class="nav pull-right">
+									<ul class="nav pull-right">
 									<li class="active"><a href="index.html">Home</a></li>
 									<li><a href="about.html">About</a></li>
 									<li><a href="contact.html">Contact</a></li>
+								</ul>
 								</ul>
 							</div>
 						</div>
@@ -59,62 +59,35 @@
 		</div>
 	</div>
 
-	<div id="banner">
-		<div class="welcome_index">
-			I love <span class="hue">software</span>,
-			we love	<span>technology</span>
-		</div>
-	</div>
-							
 	<div class="container">
 		<div class="inner_content">
-			<div class="pad30"></div>
+			<h1 class="title">Tellme</h1>
+			<h1 class="intro">We are make a space where real pepople
+				<span class="mid">enjoy</span> a convesation like in real life.
+			</h1>
 
-			<h1 class="title">Our works</h1>
-			<h1 class="intro">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis massa massa, nec consectetur ipsum vulputate at. Integer sit amet consequat quam, eget sagittis nibh.
-		</h1>
-                    
-			<!-- portfolio -->
-			<div class="row">
-				<div class="projects">            
 
-				    <div class="span4 element category01" data-category="category01">
-				        <div data-zlname="port_hover">
-							<img src="img/portfolio/chat_small.png" alt="" >
-							<a data-zl-popup="link" href="img/portfolio/chat_small.png" data-rel="prettyPhoto[portfolio1]"><img src="img/zoom.png" alt=""></a>
-							<a data-zl-popup="link2" href="project_one.html"><img src="img/link.png" alt=""></a>
+				<div class="row">
+                    <div class="span4">
+						<p>
+							<Strong>Proin laoreet venenatis augue, eu commodo ligula fermentum at vestibulum ante ipsum primis in faucibus.</Strong>
+						</p>
+						<p>
+							Suspendisse tempor leo at massa laoreet vel tincidunt leo molestie. Proin tristique accumsan nisl, quis sollicitudin urna ullamcorper  posuere cubilia curae vel. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti vivamus purus.
+						</p>
+                       
+						<div class="pad25"></div>
+						<a href="http://chattwo.herokuapp.com/" class="btn btn-1 btn-1b">launch app</a> 
 						</div>
-					</div>
-
-					<div class="span4 element category01" data-category="category01">
-				        <div data-zlname="port_hover">
-							<img src="img/portfolio/chat_small.png" alt="" >
-							<a data-zl-popup="link" href="img/portfolio/chat_small.png" data-rel="prettyPhoto[portfolio1]"><img src="img/zoom.png" alt=""></a>
-							<a data-zl-popup="link2" href="project_one.html"><img src="img/link.png" alt=""></a>
+						
+						<div class="span8 pad15">
+						<div data-zlname="hover">
+						<img src="img/portfolio/chat.png" alt=""/>
+						<a data-zl-popup="link" href="img/portfolio/chat.png" data-rel="prettyPhoto">
+						</a></div>
+						<div class="pad25"></div>
 						</div>
-					</div>
-
-					<div class="span4 element category01" data-category="category01">
-				        <div data-zlname="port_hover">
-							<img src="img/portfolio/chat_small.png" alt="" >
-							<a data-zl-popup="link" href="img/portfolio/chat_small.png" data-rel="prettyPhoto[portfolio1]"><img src="img/zoom.png" alt=""></a>
-							<a data-zl-popup="link2" href="project_one.html"><img src="img/link.png" alt=""></a>
-						</div>
-					</div>
-
-					<div class="span4 element category01" data-category="category01">
-				        <div data-zlname="port_hover">
-							<img src="img/portfolio/chat_small.png" alt="" >
-							<a data-zl-popup="link" href="img/portfolio/chat_small.png" data-rel="prettyPhoto[portfolio1]"><img src="img/zoom.png" alt=""></a>
-							<a data-zl-popup="link2" href="project_one.html"><img src="img/link.png" alt=""></a>
-						</div>
-					</div>
-
 				</div>
-				<div class="clear"></div>
-			</div>
-			<!-- /portfolio    -->
 		</div>
 	</div>
 		
@@ -151,15 +124,13 @@
 			var $container = $('.projects');
 			$container.imagesLoaded(function() {
 			$('.projects').fadeIn(1000).isotope({
-				layoutMode : 'fitRows',
-			   itemSelector : '.element' });
+			layoutMode : 'fitRows',
+		    itemSelector : '.element' });
 			});
-			$('.element').css('opacity',0);
-
+			$('.element').css('opacity',0);					
 			$('.element').each(function(i){
 				$(this).delay(i*150).animate({'opacity':1},350);
 			});
-
 		});
 	})(jQuery);
 	</script>
