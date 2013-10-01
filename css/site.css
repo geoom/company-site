@@ -9,7 +9,8 @@ body {
 	font:15px/25px 'Lato', sans-serif;
 	color:#656565;
 	font-weight:300;
-	background: #F6F5F2; 
+	background: url('../img/bg.png'); 
+	overflow-x: hidden;
 	-webkit-backface-visibility:hidden;  
 	text-rendering:optimizeLegibility;
 	overflow-x:hidden;
@@ -192,8 +193,8 @@ hr{
 	border-top: 1px solid #ccc;
 	margin: 1em auto;
 	padding: 0;
-	color: #E3E8E9;
-	background-color: #E3E8E9;
+	color: rgb(202, 186, 186);
+	background-color: rgb(202, 186, 186);
 	border: none;
 }
 
