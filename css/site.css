@@ -18,9 +18,9 @@ body {
 /**** PAGE CONTAINERS ****/
 .header { 
 	padding:0 0;
-	background:#104C73;
+	background:#2980B9;
 	margin:0 auto; 
-	height: 100px;
+	height: 70px;
 	width: 100%;
 	z-index: 1000; 
 }
@@ -64,7 +64,7 @@ line-height:25px!important;font-size:16px!important;}
 /* Medium */
 .mid {color:#2980B9; }
 /* Dark */
-.hue {color:#104c73; }
+.hue {color: rgb(18, 185, 18); }
 .white { color:#fff; }
 .hue_block, .hue_block2 { background-color:#55a8de; color: #fff; padding:0px 4px 2px; }
 .hue_block:hover, .tag:hover { color:#fff; background-color:#104c73; }
@@ -187,6 +187,21 @@ h5 { font-size: 17px; line-height:27px; margin-bottom:10px; }
 h6 { font-size: 16px; line-height:24px; margin-bottom:10px; }
 h1.intro {  color:#89949b; line-height:40px; font-weight:300; margin-bottom:60px; text-align:left; }
 
+hr{
+	display: block;
+	border-top: 1px solid #ccc;
+	margin: 1em auto;
+	padding: 0;
+	color: #E3E8E9;
+	background-color: #E3E8E9;
+	border: none;
+}
+
+hr.small{
+	height: 1px;
+	width: 50%;
+}
+
 /**** DROP CAPS ****/
 .dropcap, .dropcap2 {
     font-weight: 700;
@@ -216,7 +231,7 @@ h1.intro {  color:#89949b; line-height:40px; font-weight:300; margin-bottom:60px
 /**** LOGO ****/
 .logo a{
  	float:left; 
-	margin:28px 0 0px 0;
+	margin:16px 0 0px 0;
 	webkit-transition:all 0.3s ease-in;  
     -moz-transition:all 0.3s ease-in;  
     -o-transition:all 0.3s ease-in;  
@@ -237,9 +252,9 @@ h1.intro {  color:#89949b; line-height:40px; font-weight:300; margin-bottom:60px
 	border-radius:0px !important;
 	box-shadow:none !important;
 }
-.navbar .nav {background:#104C73!important; margin-top: 34px; }
+.navbar .nav {background:#2980B9!important; margin-top: 15px; }
 .navbar .nav > li > a {
-	color: #679fc3;
+	color: #badcea;
 	text-shadow: none;
 	background:transparent!important;
 	font-weight: bold;
@@ -252,11 +267,11 @@ h1.intro {  color:#89949b; line-height:40px; font-weight:300; margin-bottom:60px
 	-ms-transition: background-color .2s linear, color .2s linear;
 	transition: background-color .2s linear, color .2s linear;
 }
-.navbar .nav > li > a:hover { color:#A3D2F1; } 
+.navbar .nav > li > a:hover { color:#FFF; } 
 .menu-caret { border-top-color: #A3D2F1!important; border-bottom-color: #badcea important; }
 
 .navbar .nav > .active > a {
-	color: #badcea!important;
+	color: #FFF!important;
 	background: none!important;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -304,10 +319,15 @@ h1.intro {  color:#89949b; line-height:40px; font-weight:300; margin-bottom:60px
 	padding:55px 0 60px;
 	font-weight:300; 
 	margin:0 auto;
-	color:#69b9ed;
+	color:#89949b;
 	text-align:center;
 }
-#banner { width:100%; background:#2980B9; text-align:center; }
+
+.welcome_index span{
+	/*color: #8F57E4;*/
+}
+
+#banner { width:100%; text-align:center; padding: 15px 0; }
 
 /* Index Boxes */
 .tile {
@@ -575,7 +595,7 @@ h1.intro {  color:#89949b; line-height:40px; font-weight:300; margin-bottom:60px
 }
 
 /*-----------------------------------------------------------------------------------*/
-/*	06:FOOTER
+/*	FOOTER
 /*-----------------------------------------------------------------------------------*/
 #footer {
 	position:relative;
@@ -606,121 +626,7 @@ h1.intro {  color:#89949b; line-height:40px; font-weight:300; margin-bottom:60px
 }
 .go-top:hover { background-color: #104C73;opacity:0.6;}
 
-/*-----------------------------------------------------------------------------------*/
-/*	07: NIVO SLIDER, PORTFOLIO, GALLERY, CAROUSEL & CIRCE SLIDER
-/*-----------------------------------------------------------------------------------*/
 
-/*************************************************************
-	NIVO SLIDER
- *************************************************************/
-.nivo { margin:0px 0 -20px; padding-top:0px; }
-.nivoSlider { position:relative; width:100%; height:auto; overflow hidden; }
-.nivoSlider img { position absolute; top:0px; left:0px; max-width:none; }
-.nivo-main-image {
-	display: block !important;
-	position: relative !important; 
-	width: 100% !important;
-}
-.nivoSlider a.nivo-imageLink {
-	position: absolute;
-	top:0px;
-	left:0px;
-	width:100%;
-	height:100%;
-	border:0;
-	padding:0;
-	margin:0;
-	z-index:6;
-	display:none;
-}
-.nivo-slice { display:block; position:absolute; z-index:5; height:100%; top:0; }
-.nivo-box { display:block; position:absolute; z-index:5; overflow:hidden; }
-.nivo-box img { display:block; }
-.nivo-html-caption {  display:none; }
-.nivo-controlNav {display: none; }
-.nivo-box {width: 10px; }
-.slider-wrapper { position:relative; margin:0 auto 20px auto;}
-.nivoSlider {
-	position:relative;
-	background:transparent;
-    margin: 0 auto 0 auto;
-}
-.nivoSlider img { position:absolute; top:0px; left:0; display:none; }
-.nivoSlider a { border:0; display:block; }
-.nivo-controlNav a {display:none; }
-.nivo-directionNav a {
-	 display:block;
-    position: absolute !important;
-    z-index:10;
-    cursor:pointer;
-    top auto; left:auto;
-    bottom:0px; right:0px;
-    width: 33px !important;
-    height: 33px !important;
-    text-indent: -9999px;
-    background: url("../img/slider_nav.png") no-repeat 0 0;
-    opacity: 0.6;
-}
- a.nivo-nextNav:hover,  .nivo-prevNav:hover  { opacity: 1; }
- a.nivo-nextNav { background-position: -33px 0px; right:0px; }
- a.nivo-prevNav { right:33px; }
-.nivo-caption {
-    display:block;
-    position:absolute;
-    z-index:8;
-    top:auto;
-    left:auto;
-    bottom:0px;
-    right:66px;
-    line-height:23px;
-    padding:5px 15px;
-    font-size:13px;
-	width:auto !important;
-    max-width:500px;
-    background-color:rgba(11,11,11,0.6);
-	color:#fff;
-}
-
-/*************************************************************
-	SUPERBOX
- *************************************************************/
-.wrapper { max-width:1280px; margin:0 auto; }
-.superbox-list {
-	display:inline-block;
-	*display:inline;
-	zoom:1;
-	width:12.5%;
-}
-.superbox-img { max-width:100%; width:100%; cursor:pointer; }
-.superbox-show {
-	text-align:center;
-	position:relative;
-	width:100%;
-    float:left;
-	padding:25px 0;
-	display:none;
-}
-.superbox-current-img { max-width:100%; }
-.superbox-img:hover { 
-	opacity:0.8;
-	-webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-.superbox-float { float:left; }
-.superbox-close {
-	opacity:0.8;
-	cursor:pointer;
-	position:absolute;
-	top:25px;
-	right:0px;
-	background:url(../img/close.png) no-repeat center center;
-	width:30px;
-	height:30px;
-}
-.superbox-close:hover { opacity:1;}
 
 /*************************************************************
 	PORTFOLIO
