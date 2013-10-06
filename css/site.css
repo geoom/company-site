@@ -1,11 +1,12 @@
 
 
 /*-----------------------------------------------------------------------------------*/
-/*	01: GENERAL STYLING
+/*	GENERAL STYLING
 /*-----------------------------------------------------------------------------------*/
 
 body {
 	margin:0; padding:0;
+	padding-top: 40px;
 	font:15px/25px 'Lato', sans-serif;
 	color:#656565;
 	font-weight:300;
@@ -16,7 +17,6 @@ body {
 	overflow-x:hidden;
 }
 
-/**** PAGE CONTAINERS ****/
 .header { 
 	padding:0 0;
 	background:#2980B9;
@@ -25,6 +25,14 @@ body {
 	width: 100%;
 	z-index: 1000; 
 }
+
+.header.fixed{
+	z-index: 99999;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
 #slider_header {  margin:0px auto 25px; padding:0 0 0px;}
 .inner_content { padding:25px 0 0 0;text-align:left;}
 
@@ -75,6 +83,7 @@ line-height:25px!important;font-size:16px!important;}
 .pad90 { padding-top:90px; }
 .pad60 { padding-top:60px; }
 .pad45 { padding-top:45px; }
+.pad40 { padding-top:40px; }
 .pad30 { padding-top:30px; }
 .pad25 { padding-top:25px; }
 .pad15 { padding-top:15px; }
@@ -241,7 +250,7 @@ hr.small{
 .logo a:hover{ opacity: .80; }
 
 /*-----------------------------------------------------------------------------------*/
-/*	02: MENU
+/*	MENU
 /*-----------------------------------------------------------------------------------*/
 .btn-navbar {
 	background:0px none;
@@ -311,7 +320,7 @@ hr.small{
 .dropdown-submenu > .dropdown-menu { left: 166px!important; }
 
 /*-----------------------------------------------------------------------------------*/
-/*	03: INDEX PAGE
+/*	INDEX PAGE
 /*-----------------------------------------------------------------------------------*/
 /* Index Welcome Text */
 .welcome_index {
